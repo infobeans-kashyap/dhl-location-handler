@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function dhl_api_handler_install() {
+    \Drupal::configFactory()->getEditable('dhl_api_handler.settings')
+        ->set('dhl_api_key', '')
+        ->set('dhl_api_base_url', '')
+        ->save();
+}

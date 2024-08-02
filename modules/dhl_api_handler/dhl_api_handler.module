@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function dhl_api_handler_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.dhl_api_handler':
+      return '<p>' . t('This module provides integration with DHL Location API') . '</p>';
+  }
+}

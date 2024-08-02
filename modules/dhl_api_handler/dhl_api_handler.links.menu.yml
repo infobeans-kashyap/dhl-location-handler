@@ -1,0 +1,6 @@
+dhl_api_handler.settings_form:
+  title: 'DHL API Handler Settings'
+  description: 'Configure the DHL API key for the location API.'
+  parent: system.admin_config_system
+  route_name: dhl_api_handler.settings_form
+  weight: 100

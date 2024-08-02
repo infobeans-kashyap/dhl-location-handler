@@ -1,0 +1,7 @@
+name: 'DHL API Handler'
+type: module
+description: 'A module to call DHL locations API.'
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:system

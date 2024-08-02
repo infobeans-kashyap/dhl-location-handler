@@ -1,0 +1,23 @@
+dhl_api_handler.settings_form:
+  path: '/admin/config/dhl-api-handler'
+  defaults:
+    _form: '\Drupal\dhl_api_handler\Form\DhlAPIHandlerConfigForm'
+    _title: 'DHL API Handler Settings'
+  requirements:
+    _permission: 'administer site configuration'
+    
+dhl_api_handler.form:
+  path: '/dhl-api-handler'
+  defaults:
+    _form: '\Drupal\dhl_api_handler\Form\DhlApiHandlerForm'
+    _title: 'DHL API Handler'
+  requirements:
+    _permission: 'access content'
+
+dhl_api_handler.results:
+  path: '/dhl-api-handler/results'
+  defaults:
+    _controller: '\Drupal\dhl_api_handler\Controller\DhlAPIController::results'
+    _title: 'DHL API Results'
+  requirements:
+    _permission: 'access content'
